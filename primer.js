@@ -43,3 +43,18 @@ console.log("El primer caracter es '" + primerCaracter + "'.");
 console.log("El último caracter es '" + ultimoCaracter + "'.");
 
 
+function doble(numero) {
+ return numero * 2;
+}
+
+console.log(doble(5));
+console.log(doble(10));
+console.log(doble(15));
+
+
+
+
+// Crea un array de números y muestra por consola el valor del primer y último elemento.
+let array=prompt("Ingrese como mínimo 3 números"+[]+[]+[])
+console.log(array[0,-1]);
+
