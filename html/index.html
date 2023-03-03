@@ -20,15 +20,14 @@
     <header>
         <div class="header">
             <picture></picture>
-            <div class="logo">
-                <picture><source
-                    srcset="/tienda-online/img/logo.png"
-                    media="(condición)">
-                <source srcset="/tienda-online/img/logo.png" media="(condición)">
-                <img src="/tienda-online/img/logo.png"
-                    alt="logo-madbox"></picture>
+            <div class="header-logo">
+                <picture>
+                    <source srcset="/tienda-online/img/logo.png" media="(condición)">
+                    <source srcset="/tienda-online/img/logo.png" media="(condición)">
+                    <img src="/tienda-online/img/logo.png" alt="logo-madbox">
+                </picture>
             </div>
-            <div class="nav">
+            <div class="header-menu">
                 <nav>
                     <ul>
                         <li><a href="">Home</a></li>
@@ -37,10 +36,11 @@
                         <li><a href="">Faq</a></li>
                         <li><a href="">Team</a></li>
                         <li><a href="">Maps</a></li>
-                        <li><button><a href="">BUY</a></button></li>
                     </ul>
-
                 </nav>
+                <div class="header-checkout">
+                    <button><a href="">BUY</a></button>
+                </div>
             </div>
         </div>
 
@@ -48,19 +48,24 @@
     </header>
     <main>
         <div class="slider">
-            <div class="slider-content">
+            <div class="slider-title">
                 <h1>New Album</h1>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quos, eius?</p>
-                <picture>
-                    <source
-                        srcset="/tienda-online/img/SCOPE-0028_InterscopeStore_ArtistHero_Desktop_KendrickLamar-02_2520x.webp"
-                        media="(condición)">
-                    <source srcset="ruta_de_la_imagen_2" media="(condición)">
-                    <img src="/tienda-online/img/SCOPE-0028_InterscopeStore_ArtistHero_Desktop_KendrickLamar-02_2520x.webp"
-                        alt="fondo-img-slider">
-                </picture>
-
-                <button>Buy It Now</button>
+                <div class="slider-description">
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quos, eius?</p>
+                </div>
+                <div class="slider-image">
+                    <picture>
+                        <source
+                            srcset="/tienda-online/img/SCOPE-0028_InterscopeStore_ArtistHero_Desktop_KendrickLamar-02_2520x.webp"
+                            media="(condición)">
+                        <source srcset="ruta_de_la_imagen_2" media="(condición)">
+                        <img src="/tienda-online/img/SCOPE-0028_InterscopeStore_ArtistHero_Desktop_KendrickLamar-02_2520x.webp"
+                            alt="fondo-img-slider">
+                    </picture>
+                </div>
+                <div class="slider-button">
+                    <button>Buy It Now</button>
+                </div>
             </div>
             <div class="slider-front-image">
                 <picture></picture>
@@ -71,20 +76,54 @@
                 <p>Lorem ipsum dolor sit amet.</p>
             </div>
         </div>
-        
+
         <div class="featured">
-            <h2></h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae amet provident harum, aliquam tempora suscipit minima sequi exercitationem accusamus hic!</p>
-            <div class="featured-product">
+            <div class="featured-title">
                 <h2></h2>
-                <p></p>
+            </div>
+            <div class="featured-description">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae amet provident harum, aliquam
+                    tempora suscipit minima sequi exercitationem accusamus hic!</p>
+            </div>
+            <div class="featured-items">
+                <div class="featured-item-column">
+                    <div class="item-featured-column-img">
+                        <picture></picture>
+                    </div>
+                    <div class="featured-item-column-title">
+                        <h4></h4>
+                    </div>
+                    <div class="featured-item-column-description">
+                        <p></p>
+                    </div>
+                </div>
+            </div>
+            <div class="featured-item-column">
+                <div class="item-featured-column-img">
+                    <picture></picture>
+                </div>
+                <div class="featured-item-column-title">
+                    <h4></h4>
+                </div>
+                <div class="featured-item-column-description">
+                    <p></p>
+                </div>
+            </div>
+        </div>
+        <div class="featured-item-column">
+            <div class="item-featured-column-img">
                 <picture></picture>
             </div>
-            <div class="featured-product">
+            <div class="featured-item-column-title">
                 <h4></h4>
+            </div>
+            <div class="featured-item-column-description">
                 <p></p>
-                <picture></picture>
+            </div>
         </div>
+    </div>
+</main>
+</main>
     </main>
 </body>
 
