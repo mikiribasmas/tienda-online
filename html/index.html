@@ -1,24 +1,33 @@
 <!-- Comentario -->
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="">
 
-    
-    <title>Tienda Beats Online</title>
+
+    <title>MadBox</title>
     <meta name="description" content="descripción de la web, se recomienda 90 caracteres">
-    <meta name="keywords"    content="palabras clave, separadas, por comas">
+    <meta name="keywords" content="palabras clave, separadas, por comas">
 
     <link rel="stylesheet" href="css/shop.css">
 </head>
+
 <body>
     <!-- <script src="primer.js"></script> -->
     <header>
         <div class="header">
             <picture></picture>
-            <div class="logo"><picture></picture></div>
+            <div class="logo">
+                <picture><source
+                    srcset="/tienda-online/img/logo.png"
+                    media="(condición)">
+                <source srcset="/tienda-online/img/logo.png" media="(condición)">
+                <img src="/tienda-online/img/logo.png"
+                    alt="logo-madbox"></picture>
+            </div>
             <div class="nav">
                 <nav>
                     <ul>
@@ -34,7 +43,7 @@
                 </nav>
             </div>
         </div>
-            
+
         </div>
     </header>
     <main>
@@ -42,25 +51,39 @@
             <div class="slider-content">
                 <h1>New Album</h1>
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quos, eius?</p>
-                <picture></picture>
+                <picture>
+                    <source
+                        srcset="/tienda-online/img/SCOPE-0028_InterscopeStore_ArtistHero_Desktop_KendrickLamar-02_2520x.webp"
+                        media="(condición)">
+                    <source srcset="ruta_de_la_imagen_2" media="(condición)">
+                    <img src="/tienda-online/img/SCOPE-0028_InterscopeStore_ArtistHero_Desktop_KendrickLamar-02_2520x.webp"
+                        alt="fondo-img-slider">
+                </picture>
+
                 <button>Buy It Now</button>
             </div>
-            <div class="front-image">
+            <div class="slider-front-image">
                 <picture></picture>
                 <p>Lorem ipsum dolor sit amet.</p>
             </div>
-            <div class="back-image">
+            <div class="slider-back-image">
                 <picture></picture>
                 <p>Lorem ipsum dolor sit amet.</p>
             </div>
         </div>
-        <div class="product">
-            <picture></picture>
-            <div class="product-description">
-                <h1></h1>
+        
+        <div class="featured">
+            <h2></h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae amet provident harum, aliquam tempora suscipit minima sequi exercitationem accusamus hic!</p>
+            <div class="featured-product">
+                <h2></h2>
                 <p></p>
                 <picture></picture>
             </div>
+            <div class="featured-product">
+                <h4></h4>
+                <p></p>
+                <picture></picture>
         </div>
     </main>
 </body>
