@@ -19,12 +19,13 @@
     <!-- <script src="primer.js"></script> -->
     <header>
         <div class="header">
-            <picture></picture>
             <div class="header-logo">
                 <picture>
-                    <source srcset="/tienda-online/img/logo.png" media="(condición)">
-                    <source srcset="/tienda-online/img/logo.png" media="(condición)">
-                    <img src="/tienda-online/img/logo.png" alt="logo-madbox">
+                    <a href="">
+                        <source srcset="../img/logo.png" media="(condición)">
+                        <source srcset="../img/logo.png" media="(condición)">
+                        <img src="../img/logo.png" alt="logo-madbox">
+                    </a>
                 </picture>
             </div>
             <div class="header-menu">
@@ -39,92 +40,379 @@
                     </ul>
                 </nav>
                 <div class="header-checkout">
-                    <button><a href="">BUY</a></button>
+                    <button><a href="">BUY IT NOW</a></button>
                 </div>
             </div>
         </div>
 
         </div>
     </header>
+
     <main>
         <div class="slider">
+
             <div class="slider-title">
-                <h1>New Album</h1>
-                <div class="slider-description">
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quos, eius?</p>
-                </div>
-                <div class="slider-image">
-                    <picture>
-                        <source
-                            srcset="/tienda-online/img/SCOPE-0028_InterscopeStore_ArtistHero_Desktop_KendrickLamar-02_2520x.webp"
-                            media="(condición)">
-                        <source srcset="ruta_de_la_imagen_2" media="(condición)">
-                        <img src="/tienda-online/img/SCOPE-0028_InterscopeStore_ArtistHero_Desktop_KendrickLamar-02_2520x.webp"
-                            alt="fondo-img-slider">
-                    </picture>
-                </div>
-                <div class="slider-button">
-                    <button>Buy It Now</button>
-                </div>
+                <h1>Kendrick Lamar</h1>
             </div>
-            <div class="slider-front-image">
-                <picture></picture>
-                <p>Lorem ipsum dolor sit amet.</p>
+            <div class="slider-description">
+                <p>Kendrick Lamar has returned with his highly anticipated new album, showcasing his unique lyrical
+                    style and innovative production. He proves once again why he's one of the best in the industry
+                    today.
+                </p>
             </div>
-            <div class="slider-back-image">
-                <picture></picture>
-                <p>Lorem ipsum dolor sit amet.</p>
+            <div class="slider-image">
+                <picture>
+                    <source srcset="../img/SCOPE-0028_InterscopeStore_ArtistHero_Desktop_KendrickLamar-02_2520x.webp"
+                        media="(condición)">
+                    <source srcset="ruta_de_la_imagen_2" media="(condición)">
+                    <img src="../img/SCOPE-0028_InterscopeStore_ArtistHero_Desktop_KendrickLamar-02_2520x.webp"
+                        alt="fondo-img-slider">
+                </picture>
+            </div>
+            <div class="slider-button">
+                <button>BUY</button>
             </div>
         </div>
+        <!--imagenes cara-a y cara-b opcionales-->
+        <!--<div class="slider-front-image">
+            <picture>
+                <source srcset="../img/GKMCBLACKLP_752x.webp" media="(condición)">
+                <source srcset="ruta_de_la_imagen_2" media="(condición)">
+                <img src="../img/GKMCBLACKLP_752x.webp" alt="fondo-img-slider">
+            </picture>
+            <p>Lorem ipsum dolor sit amet.</p>
+        </div>
+        <div class="slider-back-image">
+            <picture>
+                <source srcset="../img/GKMCTranslucentLP_752x.webp" media="(condición)">
+                <source srcset="ruta_de_la_imagen_2" media="(condición)">
+                <img src="../img/GKMCTranslucentLP_752x.webp" alt="fondo-img-slider">
+            </picture>
+            <p>Lorem ipsum dolor sit amet.</p>
+        </div>-->
+        </div>
+
 
         <div class="featured">
             <div class="featured-title">
-                <h2></h2>
+                <h2>Mr Morale & The Big Steppers</h2>
             </div>
             <div class="featured-description">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae amet provident harum, aliquam
-                    tempora suscipit minima sequi exercitationem accusamus hic!</p>
+                <p>The product is in different formats so you can listen to it at any time of the day
+                </p>
             </div>
             <div class="featured-items">
-                <div class="featured-item-column">
-                    <div class="item-featured-column-img">
+                <div class="featured-item">
+                    <div class="featured-item-img">
+                        <picture>
+                            <source srcset="" media="(condición)">
+                            <source srcset="" media="(condición)">
+                            <img src="../img/KLSTDLP_376x.webp" alt="img-featured">
+                        </picture>
+                    </div>
+                    <div class="featured-item-title">
+                        <h4>Vynil</h4>
+                    </div>
+                    <div class="featured-item-description">
+                        <p>Enjoy it on vinyl</p>
+                    </div>
+                </div>
+
+                <div class="featured-item">
+                    <div class="item-featured-img">
+                        <picture>
+                            <source srcset="" media="(condición)">
+                            <source srcset="" media="(condición)">
+                            <img src="../img/Cassette.webp" alt="img-featured">
+                        </picture>
+                    </div>
+                    <div class="featured-item-title">
+                        <h4>Cassette</h4>
+                    </div>
+                    <div class="featured-item-description">
+                        <p>Enjoy it on cassette</p>
+                    </div>
+                </div>
+            </div>
+            <div class="featured-item">
+                <div class="item-featured-img">
+                    <picture>
+                        <source srcset="" media="(condición)">
+                        <source srcset="" media="(condición)">
+                        <img src=".././img/ProductDigital.webp" alt="img-featured">
+                    </picture>
+                </div>
+                <div class="featured-item-title">
+                    <h4>Digital</h4>
+                </div>
+                <div class="featured-item-description">
+                    <p>Enjoy it on digital album</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="detail">
+            <div class="detail-column">
+                <div class="detail-item">
+                    <div class="detail-item-icono">
+                        <picture>
+                            <source srcset="" media="(condición)">
+                            <source srcset="" media="(condición)">
+                            <img src="../img/76694.png" alt="img-featured">
+                        </picture>
+                    </div>
+                    <div class="detail-column-item-description">
+                        <div class="detail-column-item-description-title">
+                            <h4></h4>
+                        </div>
+                        <div class="detail-column-item-description-text">
+                            <p>Mr. Morale & The Big Steppers" is the debut full-length album by the eponymous band, who
+                                have been making music together for years.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="detail-item">
+                    <div class="detail-item-icono">
+                        <picture>
+                            <source srcset="" media="(condición)">
+                            <source srcset="" media="(condición)">
+                            <img src="../img/funk.png" alt="img-featured">
+                        </picture>
+                    </div>
+                    <div class="detail-column-item-description">
+                        <div class="detail-column-item-description-title">
+                            <h4></h4>
+                        </div>
+                        <div class="detail-column-item-description-text">
+                            <p>The album is a collection of songs that reflect their unique style and love for soul and
+                                funk music.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="detail-item">
+                    <div class="detail-item-icono">
+                        <picture>
+                            <picture>
+                                <source srcset="" media="(condición)">
+                                <source srcset="" media="(condición)">
+                                <img src="../img/produccion-icono.png" alt="img-featured">
+                            </picture>
+                        </picture>
+                    </div>
+                    <div class="detail-column-item-description">
+                        <div class="detail-column-item-description-title">
+                            <h4></h4>
+                        </div>
+                        <div class="detail-column-item-description-text">
+                            <p>The production is impeccable, with a perfect combination of live instruments and
+                                electronic sounds that create a dynamic and modern sound.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="detail-img">
+                <picture></picture>
+            </div>
+            <div class="detail-column">
+                <div class="detail-item">
+                    <div class="detail-item-icono">
+                        <picture>
+                            <source srcset="" media="(condición)">
+                            <source srcset="" media="(condición)">
+                            <img src="../img/relfexion.png" alt="img-featured">
+                        </picture>
+                    </div>
+                    <div class="detail-column-item-description">
+                        <div class="detail-column-item-description-title">
+                            <h4></h4>
+                        </div>
+                        <div class="detail-column-item-description-text">
+                            <p>The lyrics are deep and reflective, covering themes such as perseverance, joy, and hope.
+                                Each song tells a clear and moving story.</p>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="detail-item">
+                    <div class="detail-item-icono">
+                        <picture>
+                            <source srcset="" media="(condición)">
+                            <source srcset="" media="(condición)">
+                            <img src="../img/micro.png" alt="img-featured">
+                        </picture>
+                    </div>
+                    <div class="detail-column-item-description">
+                        <div class="detail-column-item-description-title">
+                            <h4></h4>
+                        </div>
+                        <div class="detail-column-item-description-text">
+                            <p>The vocal arrangements are impressive, with smooth and complex harmonies that perfectly
+                                complement the band's music. The choruses add an extra dimension of depth and emotion to
+                                each song.</p>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="detail-item">
+                    <div class="detail-item-icono">
+                        <picture>
+                            <source srcset="" media="(condición)">
+                            <source srcset="" media="(condición)">
+                            <img src="../img/power.png" alt="img-featured">
+                        </picture>
+                    </div>
+                    <div class="detail-column-item-description">
+                        <div class="detail-column-item-description-title">
+                            <h4></h4>
+                        </div>
+                        <div class="detail-column-item-description-text">
+                            <p>The album includes several upbeat and energetic tracks that will make you move your feet
+                                and sing along with the band. There are also some emotive ballads that will touch and
+                                inspire you.</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+        <div class="team">
+            <div class="team-title">
+                <h2></h2>
+            </div>
+            <div class="team-description">
+                <p></p>
+            </div>
+            <div class="team-persons">
+                <div class="team-persons-item">
+                    <div class="team-persons-item-img">
                         <picture></picture>
                     </div>
-                    <div class="featured-item-column-title">
-                        <h4></h4>
+                    <div class="team-persons-item-name">
+                        <h5></h5>
                     </div>
-                    <div class="featured-item-column-description">
+                    <div class="team-persons-item-description">
+                        <p></p>
+                    </div>
+                </div>
+                <div class="team-persons-item">
+                    <div class="team-persons-item-img">
+                        <picture></picture>
+                    </div>
+                    <div class="team-persons-item-name">
+                        <h5></h5>
+                    </div>
+                    <div class="team-persons-item-description">
+                        <p></p>
+                    </div>
+                </div>
+                <div class="team-persons-item">
+                    <div class="team-persons-item-img">
+                        <picture></picture>
+                    </div>
+                    <div class="team-persons-item-name">
+                        <h5></h5>
+                    </div>
+                    <div class="team-persons-item-description">
+                        <p></p>
+                    </div>
+                </div>
+                <div class="team-persons-item">
+                    <div class="team-persons-item-img">
+                        <picture></picture>
+                    </div>
+                    <div class="team-persons-item-name">
+                        <h5></h5>
+                    </div>
+                    <div class="team-persons-item-description">
                         <p></p>
                     </div>
                 </div>
             </div>
-            <div class="featured-item-column">
-                <div class="item-featured-column-img">
-                    <picture></picture>
+
+        </div>
+
+
+        <div class="contact">
+            <div class="contact-map"></div>
+            <div class="contact-card">
+                <div class="contact-card-front">
+                    <div class="contact-card-title">
+                        <h4></h4>
+                    </div>
+                    <div class="contact-card-content">
+                        <div class="contact-card-content-direction-icon">
+                            <picture></picture>
+                        </div>
+                        <div class="contact-card-content-direction-description">
+                            <p></p>
+                        </div>
+                    </div>
+                    <div class="contact-card-content">
+                        <div class="contact-card-content-direction-icon">
+                            <picture></picture>
+                        </div>
+                        <div class="contact-card-content-direction-description">
+                            <p></p>
+                        </div>
+                    </div>
+                    <div class="contact-card-content">
+                        <div class="contact-card-content-direction-icon">
+                            <picture></picture>
+                        </div>
+                        <div class="contact-card-content-direction-description">
+                            <p></p>
+                        </div>
+                    </div>
+                    <div class="contact-card-button">
+                        <button>Contact Us</button>
+                    </div>
                 </div>
-                <div class="featured-item-column-title">
-                    <h4></h4>
-                </div>
-                <div class="featured-item-column-description">
-                    <p></p>
-                </div>
+
             </div>
         </div>
-        <div class="featured-item-column">
-            <div class="item-featured-column-img">
-                <picture></picture>
+
+
+        <footer>
+            <div class="footer">
+                <div class="footer-social">
+                    <div class="footer-social-item">
+                        <picture><a href=""></a></picture>
+                    </div>
+                    <div class="footer-social-item">
+                        <picture><a href=""></a></picture>
+                    </div>
+                    <div class="footer-social-item">
+                        <picture><a href=""></a></picture>
+                    </div>
+                    <div class="footer-social-item">
+                        <picture><a href=""></a></picture>
+                    </div>
+                    <div class="footer-social-item">
+                        <picture><a href=""></a></picture>
+                    </div>
+                    <div class="footer-social-item">
+                        <picture><a href=""></a></picture>
+                    </div>
+                </div>
+                <div class="footer-menu">
+                    <ul>
+                        <li> <a href=""></a> </li>
+                        <li> <a href=""></a> </li>
+                        <li> <a href=""></a> </li>
+                        <li> <a href=""></a> </li>
+                        <li> <a href=""></a> </li>
+                    </ul>
+                </div>
             </div>
-            <div class="featured-item-column-title">
-                <h4></h4>
-            </div>
-            <div class="featured-item-column-description">
+            <div class="footer-derechos">
                 <p></p>
             </div>
-        </div>
-    </div>
-</main>
-</main>
+        </footer>
+
     </main>
+
 </body>
 
 </html>
