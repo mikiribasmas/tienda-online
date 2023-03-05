@@ -1,0 +1,114 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "neue-haas-grotesk-display", Arial, Helvetica, Sans-Serif;;
+}
+
+.header {
+    display: flex;
+    /*hace los containers flexibles para que puedan ser manipulados*/
+    position: fixed;
+    /*para que el navegador se quede fijo*/
+    width: 100%;
+    /* background-color:aqua; */
+    left: 0;
+    padding: 20px 0 24px;
+    justify-content: center;
+
+}
+
+.header .header-logo img {
+
+    max-width: 28%;
+    /* establece un ancho máximo del 100% del contenedor padre */
+    height: auto;
+    /* ajusta la altura automáticamente en proporción al ancho */
+
+    margin-left: 3em;
+}
+
+.header .header-menu {
+    margin-top: 0.9em;
+}
+
+.header .header-menu nav ul {
+    display: flex;
+    flex-direction: row;
+    /*hace que los container con un display:flex se pongan de forma horizontal*/
+    /*justify-content: space-between; */
+    list-style: none;
+
+    
+    justify-content: center;
+
+}
+
+.header .header-menu nav ul a{
+    padding: 0 17px;
+    color: white;
+}
+
+.header .header-checkout {
+    padding: 0.9em 5em;
+}
+
+/*****************SLIDER STYLE***************************/
+.slider {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* alinea los hijos de un contenedo*/
+    text-align: center;
+    justify-content: center;
+    /*indica como lo quiero alineado dentro del contenedor en relacion al ej eje x y al eje y*/
+}
+
+.slider-image {
+
+    position: absolute;
+    z-index: -1;
+
+}
+
+.slider-image img {
+    height: 100vh;
+    width: 100%;
+}
+
+.slider-title {
+    color: rgb(255, 255, 255);
+    
+}
+
+.slider-description {
+    color: rgb(255, 255, 255);
+    display: block;
+    margin-block-start: 2em;
+    margin-block-end: 2em;
+    margin-inline-start: 2px;
+    margin-inline-end: 2px;
+}
+
+/***********Featured************/
+
+.featured {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+}
+
+
+.featured-items {
+    display: flex;
+}
+
+.featured-item {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
