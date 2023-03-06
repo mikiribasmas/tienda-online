@@ -190,12 +190,14 @@ video {
 
 }
 
-.detail .detail-column {}
+.detail .detail-column {
+
+}
 
 .detail .detail-column .detail-item {
     display: flex;
     gap: 2em;
-    margin-bottom: 6em;
+    margin-bottom: 4em;
     padding-left: 4em;
     padding-right: 4em;
 }
