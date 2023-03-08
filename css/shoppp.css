@@ -6,6 +6,10 @@
     ;
 }
 
+body{
+    margin-bottom: 2rem;
+}
+
 h1 {
     font-size: 2.5rem;
     font-weight: 600;
@@ -48,8 +52,7 @@ video {
     max-width: 100%;
 }
 
-
-
+header{}
 
 .header {
     display: flex;
@@ -79,13 +82,14 @@ video {
     margin-top: 0.9em;
 }
 
+
 .header .header-menu nav ul {
     display: flex;
     /*justify-content: space-between; */
     list-style: none;
     gap: 3.5rem;
-
 }
+
 
 
 .header .header-menu nav ul a {
@@ -95,7 +99,7 @@ video {
 }
 
 .header .header-menu nav a:hover {
-    color:crimson;
+    color:#E9C139;
 }
 
 .header .header-checkout {
@@ -128,6 +132,7 @@ video {
     text-align: center;
     justify-content: center;
     /*indica como lo quiero alineado dentro del contenedor en relacion al ej eje x y al eje y*/
+    gap:3rem ;
 }
 
 .slider .slider-image {
@@ -248,6 +253,9 @@ video {
 .team {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+    width:100%;
 
 }
 
@@ -282,44 +290,66 @@ video {
 
 /*******CONTACT STYLES************/
 
-.contact {}
+.contact {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
 
 .contact .contact-map iframe {
     width: 100%;
-    height: 100vh;
+    height: 95vh;
     z-index: -1;
+    position: absolute;
 }
 
-.contact .contact-cart {
+
+.contact .contact-card {
     display: flex;
     justify-content: center;
+    left: 50%;
+    position: absolute;
+    align-items: center;
+    right: 50%;
+    top: 35vh;
+    
+    
+    
 }
 
-.contact .contact-cart .contact-cart-front {}
+.contact .contact-card .contact-card-front {
+    background-color: rgba(255, 255, 255, 0.925);
+    
+    
+}
 
-.contact .contact-cart .contact-cart-front .contact-cart-title {}
+.contact .contact-card .contact-card-front .contact-card-title {}
 
-.contact .contact-cart .contact-cart-front .contact-cart-content {text-align: center;}
+.contact .contact-card .contact-card-front .contact-card-content {text-align:center;}
 
-.contact .contact-cart .contact-cart-front .contact-cart-content .contact-cart-content-direction-icon {
+.contact .contact-card .contact-card-front .contact-card-content .contact-card-content-direction-icon {
     width: 2rem;
     height: 2rem;
 }
 
-.contact .contact-cart .contact-cart-front .contact-cart-content .contact-cart-content-direction-description {}
+.contact .contact-card .contact-card-front .contact-card-content .contact-card-content-direction-description {}
 
-.contact .contact-cart .contact-cart-front .contact-cart-button {}
+.contact .contact-card .contact-card-front .contact-card-button {}
 
 
 footer {
     /* gap: 5rem;????? */
 }
 
-.footer {
-    margin-bottom: 4rem;
+.footer-content {
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 4rem;
 }
 
-.footer .footer-menu ul {
+.footer-content .footer-menu ul {
     display: flex;
     justify-content: center;
     gap: 2rem;
@@ -328,7 +358,7 @@ footer {
 
 }
 
-.footer .footer-menu ul li a svg {
+.footer-content .footer-menu ul li a svg {
     width: 3rem;
     height: 3rem;
 }
