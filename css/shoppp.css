@@ -6,7 +6,7 @@
     ;
 }
 
-body{
+body {
     margin-bottom: 2rem;
 }
 
@@ -52,7 +52,7 @@ video {
     max-width: 100%;
 }
 
-header{}
+header {}
 
 .header {
     display: flex;
@@ -99,7 +99,7 @@ header{}
 }
 
 .header .header-menu nav a:hover {
-    color:#E9C139;
+    color: #E9C139;
 }
 
 .header .header-checkout {
@@ -107,10 +107,10 @@ header{}
     width: auto
 }
 
-.header .header-checkout button{
+.header .header-checkout button {
     border: none;
     background-color: rgba(0, 0, 0, 0);
-    
+
 }
 
 .header .header-checkout a {
@@ -118,7 +118,7 @@ header{}
 }
 
 .header .header-checkout a:hover {
-    color:crimson;
+    color: crimson;
 }
 
 /*****************SLIDER STYLE***************************/
@@ -132,7 +132,7 @@ header{}
     text-align: center;
     justify-content: center;
     /*indica como lo quiero alineado dentro del contenedor en relacion al ej eje x y al eje y*/
-    gap:3rem ;
+    gap: 3rem;
 }
 
 .slider .slider-image {
@@ -255,7 +255,7 @@ header{}
     flex-direction: column;
     justify-content: center;
     height: 100vh;
-    width:100%;
+    width: 100%;
 
 }
 
@@ -294,38 +294,55 @@ header{}
     width: 100%;
     height: 100vh;
     position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact .contact-map {
+    width: 100%;
+
 }
 
 .contact .contact-map iframe {
     width: 100%;
     height: 95vh;
     z-index: -1;
-    position: absolute;
+    position: relative;
 }
 
 
 .contact .contact-card {
     display: flex;
     justify-content: center;
-    left: 50%;
     position: absolute;
     align-items: center;
-    right: 50%;
-    top: 35vh;
-    
-    
-    
+    width: 60%;
+    height: 40vh;
+    text-align: center;
 }
 
 .contact .contact-card .contact-card-front {
     background-color: rgba(255, 255, 255, 0.925);
-    
-    
+    height: 100%;
+    align-items: center;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
+
+
 }
 
 .contact .contact-card .contact-card-front .contact-card-title {}
 
-.contact .contact-card .contact-card-front .contact-card-content {text-align:center;}
+.contact .contact-card .contact-card-front .contact-card-content {
+    text-align: center;
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
 
 .contact .contact-card .contact-card-front .contact-card-content .contact-card-content-direction-icon {
     width: 2rem;
@@ -342,11 +359,11 @@ footer {
 }
 
 .footer-content {
-  
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  gap: 4rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 4rem;
 }
 
 .footer-content .footer-menu ul {
