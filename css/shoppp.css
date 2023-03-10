@@ -73,7 +73,7 @@ header {}
 .header .header-logo {
     padding: 0;
     justify-content: center;
-    width: 20%;
+    width: 12%;
     text-align: center;
 }
 
@@ -111,8 +111,14 @@ header {}
 }
 
 .header .header-checkout {
+    padding: 0.7rem 3rem;
+    border-radius: 20px;
+    background-color: rgba(255, 0, 0, 0.288);
+}
 
-    width: auto
+.header .header-checkout:hover {
+    background-color: rgba(255, 0, 0, 0.692);
+   
 }
 
 .header .header-checkout button {
@@ -128,7 +134,7 @@ header {}
 }
 
 .header .header-checkout a:hover {
-    color: crimson;
+    
 }
 
 /*****************SLIDER STYLE***************************/
