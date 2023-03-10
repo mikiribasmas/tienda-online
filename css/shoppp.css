@@ -86,7 +86,9 @@ header {}
 
 }
 
-.header .header-menu {}
+.header .header-menu {
+    
+}
 
 
 .header .header-menu nav ul {
@@ -138,7 +140,7 @@ header {}
     text-align: center;
     justify-content: center;
     /*indica como lo quiero alineado dentro del contenedor en relacion al ej eje x y al eje y*/
-    gap: 1rem;
+    gap: 3rem;
 }
 
 .slider .slider-image {
@@ -153,26 +155,56 @@ header {}
     width: 100%;
 }
 
-.slider .slider-title {
+.slider-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:2rem ;
+}
+
+.slider .slider-title h1 {
     color: rgb(255, 255, 255);
     margin-bottom: 1rem;
+    font-size: 4rem;
 
 
 }
 
 .slider .slider-description {
     color: rgb(255, 255, 255);
-    display: flex;
+   
     /* margin-block-start: 2em;
     margin-block-end: 2em; */
-    text-align: center;
-    margin-bottom: 1rem;
-    margin: 0 25%;
+    
+    
+    margin: 0 20%;
+    font-size: 2rem;
 
 }
 
+.slider .slider-button{
+    width: 35rem;
+    height: 8vh;
+    margin: 0 50%;
+    
+}
+
+.slider .slider-button button{
+    
+    border-radius:50px ;
+    border: none;
+    font-size: 2rem;
+    width: 60%;
+    height: 100%;
+    cursor: pointer;
+    transition: color 0.2s ease-out;
+    transition:background-color 0.5s linear; ;
+    font-size: 1.5rem ;
+}
+
 .slider .slider-button button:hover {
-    background-color: rgb(43, 226, 89);
+    background-color: #8d0707;
+    color: rgba(255, 255, 255, 0.836);
 }
 
 /***********Featured************/
