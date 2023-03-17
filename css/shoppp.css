@@ -3,7 +3,7 @@
     padding: 0;
     box-sizing: border-box;
 
-    
+
 }
 
 body {
@@ -74,7 +74,7 @@ video {
     background-color: #502910ab;
     align-items: center;
     z-index: 1;
-  
+
     height: 15vh;
 }
 
@@ -179,7 +179,7 @@ video {
     gap: 3rem;
 }
 
-.slider .slider-title{
+.slider .slider-title {
     margin-bottom: 1rem;
 }
 
@@ -188,19 +188,17 @@ video {
     font-size: 4rem;
 }
 
-.slider .slider-description{
+.slider .slider-description {
     margin: 0 20%;
 }
 
-.slider .slider-description p{
+.slider .slider-description p {
     color: rgb(255, 255, 255);
     font-size: 2rem;
     font-weight: 600;
 }
 
-.slider-button {
-    
-}
+.slider-button {}
 
 .slider-button button {
     border: none;
@@ -322,10 +320,97 @@ a span {
     font-size: 1rem;
 }
 
+/*******FAQ EXAM*****/
+
+.faq {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    padding: 0 15%;
+    box-sizing: border-box;
+    background-color: #603113ee;
+    color: white;
+}
+
+.faq .faq-intro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+.faq .faq-intro .faq-title h2{
+    font-size:4rem ;
+  
+}
+
+.faq .faq-intro .faq-description{
+    text-align: center;
+    width: 53%;
+    line-height: 2rem;
+    
+}
+
+.faq .faq-intro .faq-description p{
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.faq .faq-content {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 50%;
+    gap: 2rem;
+
+}
+
+.faq .faq-content .faq-content-item {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    cursor: pointer;
+   
+   
+}
+
+
+
+.faq .faq-content .faq-content-item .faq-content-item-title {
+    width: 100%;
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+.faq .faq-content .faq-content-item .faq-content-item-title svg{
+    width: 1rem;
+}
+
+.faq .faq-content .faq-content-item .faq-content-item-title h4 {
+    font-size:2rem ;
+
+}
+.faq .faq-content .faq-content-item .faq-content-item-line{
+    width: 100%;
+    height: 1px ;
+    background-color:rgb(157, 162, 163) ;
+    margin-bottom: 1rem;
+}
+
+.faq .faq-content .faq-content-item .faq-content-item-description {
+    line-height: 1.5rem;
+    font-size: 1.25rem;
+    
+}
+
 /*******DETAIL********/
 
 .detail {
-    background-color: #603113ee;
+
     display: flex;
     padding: 5% 5%;
     width: 100%;
@@ -341,7 +426,7 @@ a span {
     justify-content: center;
     gap: 0.5rem;
     align-items: center;
-
+    width: 100%;
 }
 
 
@@ -352,18 +437,16 @@ a span {
     margin-bottom: 3rem;
 }
 
-.detail .detail-column .detail-img-audio{
+.detail .detail-column .detail-img-audio {
     display: flex;
-    flex-direction:column ;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     gap: 10rem;
 }
 
 
-.detail .detail-column .detail-item .detail-item-icono {
-    
-}
+.detail .detail-column .detail-item .detail-item-icono {}
 
 
 
@@ -395,6 +478,7 @@ a span {
 /***********TEAM**********/
 
 .team {
+    background-color: #603113ee;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -485,7 +569,7 @@ a span {
     text-align: center;
     display: flex;
     gap: 1rem;
-    
+
 }
 
 .contact .contact-card .contact-card-front .contact-card-content .contact-card-content-direction-icon {
