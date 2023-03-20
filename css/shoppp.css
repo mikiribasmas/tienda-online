@@ -8,7 +8,7 @@
 
 body {
 
-    background-color: #fff;
+    background-color: $secondary-color;
     color: black;
     display: flex;
     flex-direction: column;
@@ -203,7 +203,7 @@ video {
 
 .slider-button button {
     border: none;
-    background-color: #ffffff00;
+    background-color: $secondary-color;
 }
 
 .slider-button a {
@@ -330,7 +330,7 @@ a span {
     height: 100vh;
     padding: 0 15%;
     box-sizing: border-box;
-    background-color: #603113ee;
+    background-color: $primary-color;
     color: white;
 }
 
@@ -459,7 +459,7 @@ a span {
 }
 
 #player {
-    background: #fff;
+    background: $secondary-color;
     position: relative;
     margin: auto;
     width: 300px;
@@ -488,7 +488,7 @@ a span {
 .heart {
     position: absolute;
     right: 0;
-    color: #fff;
+    color: $secondary-color;
     margin: 10px;
     transition: all 0.4s ease;
 }
@@ -628,7 +628,7 @@ a span {
     color: #557c5f;
 }
 
-footer {
+/* footer {
     position: absolute;
     bottom: 0;
     right: 0;
@@ -642,14 +642,14 @@ footer {
 }
 
 footer a {
-    color: #fff;
+    color: $secondary-color;
     text-decoration: none;
 }
 
 footer a:hover {
     color: #49654d;
 }
- 
+  */
 
 
 /******REPRODUCTOR*****/
@@ -687,7 +687,7 @@ footer a:hover {
 /***********TEAM**********/
 
 .team {
-    background-color: #603113ee;
+    background-color: #693514ee;
     display: flex;
     flex-direction: column;
     justify-content: center;

@@ -1,0 +1,84 @@
+.faq {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    padding: 0 15%;
+    box-sizing: border-box;
+    background-color: $primary-color;
+    color: white;
+}
+
+.faq .faq-intro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+.faq .faq-intro .faq-title h2{
+    font-size:4rem ;
+  
+}
+
+.faq .faq-intro .faq-description{
+    text-align: center;
+    width: 53%;
+    line-height: 2rem;
+    
+}
+
+.faq .faq-intro .faq-description p{
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.faq .faq-content {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 50%;
+    gap: 2rem;
+
+}
+
+.faq .faq-content .faq-content-item {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    cursor: pointer;
+   
+   
+}
+
+
+
+.faq .faq-content .faq-content-item .faq-content-item-title {
+    width: 100%;
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+.faq .faq-content .faq-content-item .faq-content-item-title svg{
+    width: 1rem;
+}
+
+.faq .faq-content .faq-content-item .faq-content-item-title h4 {
+    font-size:2rem ;
+
+}
+.faq .faq-content .faq-content-item .faq-content-item-line{
+    width: 100%;
+    height: 1px ;
+    background-color:rgb(157, 162, 163) ;
+    margin-bottom: 1rem;
+}
+
+.faq .faq-content .faq-content-item .faq-content-item-description {
+    line-height: 1.5rem;
+    font-size: 1.25rem;
+    
+}

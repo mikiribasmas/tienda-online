@@ -1,0 +1,62 @@
+.contact {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact .contact-map {
+    width: 100%;
+
+}
+
+.contact .contact-map iframe {
+    width: 100%;
+    height: 95vh;
+    z-index: -1;
+    position: relative;
+}
+
+
+.contact .contact-card {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    align-items: center;
+    width: 60%;
+    height: 40vh;
+    text-align: center;
+}
+
+.contact .contact-card .contact-card-front {
+    background-color: rgba(255, 255, 255, 0.925);
+    height: 100%;
+    align-items: center;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
+
+
+}
+
+.contact .contact-card .contact-card-front .contact-card-title {}
+
+.contact .contact-card .contact-card-front .contact-card-content {
+    text-align: center;
+    display: flex;
+    gap: 1rem;
+
+}
+
+.contact .contact-card .contact-card-front .contact-card-content .contact-card-content-direction-icon {
+    width: 2rem;
+    height: 2rem;
+}
+
+.contact .contact-card .contact-card-front .contact-card-content .contact-card-content-direction-description {}
+
+.contact .contact-card .contact-card-front .contact-card-button {}

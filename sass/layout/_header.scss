@@ -1,0 +1,83 @@
+.header {
+    display: flex;
+    /*hace los containers flexibles para que puedan ser manipulados*/
+    position: fixed;
+    /*para que el navegador se quede fijo*/
+    width: 100%;
+    /* background-color:aqua; */
+    padding: 0 5%;
+    justify-content: space-around;
+    background-color: #502910ab;
+    align-items: center;
+    z-index: 1;
+
+    height: 15vh;
+}
+
+
+
+.header .header-logo {
+    padding: 0;
+    justify-content: center;
+    width: 10%;
+    text-align: center;
+}
+
+.header .header-logo img {
+
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+
+}
+
+.header .header-menu {}
+
+
+.header .header-menu nav ul {
+    display: flex;
+    /*justify-content: space-between; */
+    list-style: none;
+    gap: 3.5rem;
+}
+
+
+
+.header .header-menu nav ul a {
+
+    color: white;
+    font-size: 1.25rem;
+
+}
+
+.header .header-menu nav a:hover {
+    color: #E9C139;
+}
+
+.header .header-checkout {
+    padding: 0.7rem 2.5rem;
+    border-radius: 30px;
+    background-color: rgba(255, 115, 0, 0.288);
+    cursor: pointer;
+}
+
+.header .header-checkout:hover {
+    background-color: rgba(255, 136, 0, 0.694);
+
+}
+
+.header .header-checkout button {
+    border: none;
+    background-color: rgba(0, 0, 0, 0);
+
+}
+
+
+
+.header .header-checkout a {
+    color: white;
+    font-size: 1rem;
+}
+
+.header .header-checkout a:hover {}

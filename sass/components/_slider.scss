@@ -1,0 +1,128 @@
+.slider {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* alinea los hijos de un contenedo*/
+    text-align: center;
+    justify-content: center;
+    /*indica como lo quiero alineado dentro del contenedor en relacion al ej eje x y al eje y*/
+}
+
+.slider .slider-image {
+
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+
+}
+
+.slider .slider-image img {
+    height: 100vh;
+    width: 100%;
+    filter: brightness(0.7);
+}
+
+.slider-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+}
+
+.slider .slider-title {
+    margin-bottom: 1rem;
+}
+
+.slider .slider-title h1 {
+    color: rgb(255, 255, 255);
+    font-size: 4rem;
+}
+
+.slider .slider-description {
+    margin: 0 20%;
+}
+
+.slider .slider-description p {
+    color: rgb(255, 255, 255);
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.slider-button {}
+
+.slider-button button {
+    border: none;
+    border-radius: 10px;
+    background-color: $primary-color;
+}
+
+.slider-button a {
+    width: 12.5rem;
+    padding: 1.25rem 1.875rem;
+    position: relative;
+    display: block;
+    text-decoration: none;
+    overflow: hidden;
+    border-radius: 10px;
+
+}
+
+a:hover .wave {
+    top: -7.5rem;
+}
+
+a span {
+    position: relative;
+    z-index: 1;
+    color: white;
+    font-size: 0.9rem;
+    letter-spacing: 0.5rem;
+}
+
+.wave {
+    width: 12.5rem;
+    height: 12.5rem;
+    background-color: #66300ea0;
+    box-shadow: inset 0 0 3.125rem rgba(255, 119, 0, 0.849);
+    position: absolute;
+    left: 0;
+    top: -5rem;
+    transition: 0.4s;
+
+}
+
+.wave::before,
+.wave::after {
+    width: 200%;
+    height: 200%;
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -75%);
+}
+
+.wave::before {
+    border-radius: 45%;
+    background-color: rgba(20, 20, 20, 0);
+    animation: wave 5s linear infinite;
+}
+
+.wave::after {
+    border-radius: 40%;
+    background-color: rgba(20, 20, 20, 0.5);
+    animation: wave 10s linear infinite;
+}
+
+@keyframes wave {
+    0% {
+        transform: translate(-50%, -75%) rotate(0deg);
+    }
+
+    100% {
+        transform: translate(-50%, -75%) rotate(360deg);
+    }
+}
+
