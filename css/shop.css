@@ -2,8 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "neue-haas-grotesk-display", Arial, Helvetica, Sans-Serif;
-    ;
+    font-family: $font-stack    ;
 }
 
 h1 {
@@ -89,7 +88,7 @@ video {
 
 .header .header-menu nav ul a {
 
-    color: white;
+    color: $secondary-color;
 }
 
 .header .header-checkout {
@@ -117,7 +116,7 @@ video {
 .slider .slider-image {
 
     position: absolute;
-    z-index: -1;
+    z-index:$z-index-background;
 
 }
 

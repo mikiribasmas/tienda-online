@@ -1,18 +1,17 @@
 /*Aqui declaramos todas las variables que tenemos en la web*/
 
 //z-index
-
-$z-index-slider:-1;
-$z-index-slider2:1;
-
-
-
+$z-index-background:-1;
+$z-index-mid:1000;
+$z-index-front:1001;
 //colors
 
 $primary-color:	hsl(23, 68%, 25%);
-$secondary-color:rgb(255,255,255);
+$secondary-color:hsl(0, 0%, 100%);
+
 
 //typography
 
-$font-stack:;
-$font-stack-condensed:;
+$font-stack:"neue-haas-grotesk-display", Arial, Helvetica, Sans-Serif;
+
+$font-stack-condensed:"neue-haas-grotesk-display", Arial, Helvetica, Sans-Serif;

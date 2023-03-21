@@ -13,7 +13,7 @@
 .slider .slider-image {
 
     position: absolute;
-    z-index: -1;
+    z-index: $z-index-background;
     width: 100%;
 
 }
@@ -76,7 +76,7 @@ a:hover .wave {
 a span {
     position: relative;
     z-index: 1;
-    color: white;
+    color: $secondary-color;
     font-size: 0.9rem;
     letter-spacing: 0.5rem;
 }

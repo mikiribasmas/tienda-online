@@ -15,7 +15,7 @@
 .contact .contact-map iframe {
     width: 100%;
     height: 95vh;
-    z-index: -1;
+    z-index: $z-index-background;
     position: relative;
 }
 
