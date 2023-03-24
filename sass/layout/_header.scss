@@ -59,7 +59,7 @@
     padding: 0.7rem 2.5rem;
     border-radius: 30px;
     background-color: rgba(255, 115, 0, 0.288);
-    cursor: pointer;
+   cursor: pointer;
 }
 
 .header .header-checkout:hover {
@@ -70,14 +70,15 @@
 .header .header-checkout button {
     border: none;
     background-color: rgba(0, 0, 0, 0);
-
-}
-
-
-
-.header .header-checkout a {
-    color: $secondary-color;
+    cursor: pointer;
+    color: white;
     font-size: 1rem;
+    font-weight: 600;
+   
 }
+
+
+
+
 
 .header .header-checkout a:hover {}

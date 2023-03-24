@@ -125,11 +125,10 @@ p {
 .header .header-checkout button {
   border: none;
   background-color: rgba(0, 0, 0, 0);
-}
-
-.header .header-checkout a {
-  color: hsl(0, 0%, 100%);
+  cursor: pointer;
+  color: white;
   font-size: 1rem;
+  font-weight: 600;
 }
 
 footer {
@@ -291,25 +290,41 @@ a span {
     transform: translate(-50%, -75%) rotate(360deg);
   }
 }
-.modal {
-  width: 100%;
+.modal-content {
   background-color: white;
-  height: 100vh;
-  display: flex;
   justify-content: center;
   align-items: center;
+  padding: 0 10%;
+  width: 75%;
+  height: 75vh;
+  position: fixed;
+  transform: translate(-50%, -50%);
+  display: none;
+  z-index: 9999;
+  top: 50%;
+  left: 50%;
+}
+
+.close-button {
+  position: absolute;
+  top: 5%;
+  right: 5%;
+  width: 8%;
+  height: 5%;
+  border-radius: 7px;
+  border: none;
+  background-color: rgba(179, 179, 179, 0.626);
+  cursor: pointer;
+}
+
+.close-button:hover {
+  background-color: rgba(122, 122, 122, 0.74);
 }
 
 .modal-product {
   display: flex;
   width: 100%;
   height: 80vh;
-  background-color: red;
-}
-
-.modal-content {
-  padding: 0 10%;
-  width: 100%;
 }
 
 .modal-image {
@@ -324,6 +339,45 @@ a span {
 
 .modal-description {
   width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  justify-content: center;
+  padding: 0 3%;
+}
+
+.modal-descripcion-album {
+  font-size: 1.5rem;
+  font-weight: 4rem;
+}
+
+.presentation-description {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.modal-prices {
+  display: flex;
+  gap: 1rem;
+}
+
+.modal-description-text p {
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+.modal-checkout button {
+  padding: 0.7rem 2.5rem;
+  border-radius: 10px;
+  background-color: rgba(255, 115, 0, 0.719);
+  cursor: pointer;
+  width: 100%;
+  border: none;
+}
+
+.modal-checkout button:hover {
+  background-color: rgb(255, 136, 0);
 }
 
 .featured {
@@ -369,9 +423,10 @@ a span {
 .faq {
   display: flex;
   flex-direction: column;
+  align-items: center;
   width: 100%;
   height: 100vh;
-  padding: 0 15%;
+  padding: 3% 10%;
   box-sizing: border-box;
   background-color: hsl(23, 68%, 25%);
   color: hsl(0, 0%, 100%);
@@ -474,6 +529,14 @@ a span {
   align-items: center;
   justify-content: center;
   gap: 10rem;
+}
+
+.detail-column-item-description-title {
+  font-weight: 400;
+}
+
+.detail-column-item-description-text {
+  font-weight: 200;
 }
 
 /*****REPRODUCTOR****/
@@ -677,33 +740,45 @@ a span {
   justify-content: center;
   height: 100vh;
   width: 100%;
+  gap: 4rem;
+  padding: 10% 0%;
 }
 
 .team .team-title {
   text-align: center;
   margin-bottom: 2rem;
+  color: hsl(0, 0%, 100%);
 }
 
 .team .team-description {
   text-align: center;
   margin-bottom: 2rem;
   padding: 0 20%;
+  color: hsl(0, 0%, 100%);
+  font-weight: 600;
+  line-height: 2.5rem;
 }
 
 .team .team-persons {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
+  padding: 0 5%;
+  width: 100%;
+  height: 100%;
   gap: 2rem;
 }
 
 .team .team-persons .team-persons-item {
+  width: 100%;
+  height: 100%;
   display: flex;
   flex-direction: column;
+  gap: 1rem;
 }
 
 .team .team-persons .team-persons-item .team-persons-item-img {
-  width: 16.375em;
-  height: 16.375em;
+  width: 100%;
+  height: 100%;
   position: relative;
   z-index: 1000;
 }
@@ -716,12 +791,17 @@ a span {
 .hamburguer {
   width: 15%;
   height: 15%;
-  background-color: #000;
   border-radius: 20px;
   position: absolute;
   top: 5%;
   right: 5%;
   z-index: 1001;
+}
+
+.team-persons-item-name {
+  font-size: 2rem;
+  font-weight: 200;
+  color: white;
 }
 
 .contact {
