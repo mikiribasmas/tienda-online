@@ -80,11 +80,15 @@
     top: 5%;
     right: 5%;
     z-index: $z-index-front;;
-    
+    cursor: pointer;
 }
 
 .team-persons-item-name{
     font-size: 2rem;
     font-weight: 200;
     color: white;
+}
+
+.menu-items ul li{
+    display: none;
 }
