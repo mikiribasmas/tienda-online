@@ -3,6 +3,6 @@ import './flip-element.js';
 import './modal.js';
 import './social-networks.js';
 import './swipeable-element.js';
-
+import './featured.js'
 
 console.log("hola");
