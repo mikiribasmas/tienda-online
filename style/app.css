@@ -104,7 +104,8 @@ p {
 
 .header .header-menu nav ul a {
   color: hsl(0, 0%, 100%);
-  font-size: 1.25rem;
+  font-size: 1.5rem;
+  font-weight: 600;
 }
 
 .header .header-menu nav a:hover {
@@ -184,6 +185,7 @@ footer {
   /* alinea los hijos de un contenedo*/
   text-align: center;
   justify-content: center;
+  background: linear-gradient(to bottom, hsla(23, 69%, 25%, 0), rgb(255, 255, 255));
   /*indica como lo quiero alineado dentro del contenedor en relacion al ej eje x y al eje y*/
 }
 
@@ -196,7 +198,6 @@ footer {
 .slider .slider-image img {
   height: 100vh;
   width: 100%;
-  filter: brightness(0.7);
 }
 
 .slider-content {
@@ -391,6 +392,7 @@ a span {
   justify-content: center;
   height: 100vh;
   width: 100%;
+  background: linear-gradient(to bottom, white, hsla(23, 69%, 25%, 0.888));
   align-items: center;
   gap: 2em;
 }
@@ -431,7 +433,9 @@ a span {
   height: 100vh;
   padding: 3% 10%;
   box-sizing: border-box;
-  background: linear-gradient(to top, rgb(0, 0, 0), rgba(0, 0, 0, 0)), linear-gradient(to bottom, rgb(255, 255, 255), rgb(255, 255, 255)), linear-gradient(to bottom, rgb(255, 255, 255), rgb(255, 255, 255)), linear-gradient(to bottom, rgb(255, 255, 255) 0%, rgba(255, 255, 255, 0.993) 100%), linear-gradient(to bottom, rgb(255, 255, 255) 0%, rgb(255, 254, 254) 100%);
+  background: linear-gradient(to bottom, hsla(23, 69%, 25%, 0.865), white);
+  align-items: center;
+  justify-content: center;
 }
 
 .faq {
@@ -457,12 +461,15 @@ a span {
 
 .faq .faq-intro .faq-title h2 {
   font-size: 4rem;
+  color: rgba(0, 0, 0, 0.904);
 }
 
 .faq .faq-intro .faq-description {
   text-align: center;
   width: 53%;
   line-height: 2rem;
+  color: rgb(0, 0, 0);
+  font-weight: 600;
 }
 
 .faq .faq-intro .faq-description p {
@@ -500,6 +507,7 @@ a span {
 
 .faq .faq-content .faq-content-item .faq-content-item-title h4 {
   font-size: 2rem;
+  color: black;
 }
 
 .faq .faq-content .faq-content-item .faq-content-item-line {
@@ -521,6 +529,7 @@ a span {
   height: 90vh;
   margin: 0 auto;
   gap: 2rem;
+  background: linear-gradient(to bottom, white, hsla(23, 69%, 25%, 0.902));
 }
 
 .detail .detail-column {
@@ -759,6 +768,7 @@ a span {
   gap: 4rem;
   padding: 10% 0%;
   align-items: center;
+  background: linear-gradient(to bottom, hsla(23, 68%, 25%, 0.902), white);
 }
 
 .team .team-image {
@@ -766,7 +776,6 @@ a span {
   z-index: -1;
   width: 100%;
   height: 100%;
-  background-image: linear-gradient(to top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.7)), linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.7));
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
@@ -775,14 +784,14 @@ a span {
 .team .team-title {
   text-align: center;
   margin-bottom: 2rem;
-  color: hsl(0, 0%, 100%);
+  color: black;
 }
 
 .team .team-description {
   text-align: center;
   margin-bottom: 2rem;
   padding: 0 20%;
-  color: hsl(0, 0%, 100%);
+  color: black;
   font-weight: 600;
   line-height: 2.5rem;
 }
@@ -835,6 +844,17 @@ a span {
 
 .menu-items ul li {
   display: none;
+  width: 10%;
+  height: 10%;
+}
+
+.menu-items ul li svg {
+  width: 64px;
+  height: 64px;
+}
+
+.menu-items ul li .active {
+  display: block;
 }
 
 .contact {

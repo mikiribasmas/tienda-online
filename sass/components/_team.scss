@@ -8,7 +8,7 @@
     gap: 4rem;
     padding: 10% 0%;
     align-items: center;
-
+    background: linear-gradient(to bottom, hsl(23, 68%, 25%, 0.902), white);
 }
 
 .team .team-image{
@@ -16,7 +16,6 @@
     z-index: $z-index-background;
     width: 100%;
     height: 100%;
-    background-image: linear-gradient(to top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.7)), linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.7));
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
@@ -26,14 +25,14 @@
 .team .team-title {
     text-align: center;
     margin-bottom: 2rem;
-    color: $secondary-color;
+    color: black;
 }
 
 .team .team-description {
     text-align: center;
     margin-bottom : 2rem;
     padding:0 20%;
-    color: $secondary-color;
+    color: black;
     font-weight: 600;
     line-height: 2.5rem;
     
@@ -70,7 +69,7 @@
     width: 100%;
     height: 100%;
 
-}
+}  
 .hamburguer{
     width: 15%;
     height: 15%;
@@ -86,9 +85,22 @@
 .team-persons-item-name{
     font-size: 2rem;
     font-weight: 200;
-    color: white;
+    color: white; 
 }
 
 .menu-items ul li{
     display: none;
+    width: 10%;
+    height: 10%;
 }
+.menu-items ul li svg{
+    width:64px;
+    height:64px;
+}
+
+.menu-items ul li .active{
+    display:block;
+}
+    
+    
+  
