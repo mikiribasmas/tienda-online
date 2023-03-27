@@ -28,22 +28,46 @@
     width: 60%;
     height: 40vh;
     text-align: center;
+    transition: transform 0.5s ease-in-out; /* Agregamos la transición al transform */
 }
 
 .contact .contact-card .contact-card-front {
-    background-color: rgba(255, 255, 255, 0.925);
+    background-color: rgb(255, 255, 255);
     height: 100%;
+    backface-visibility: hidden;
     align-items: center;
     width: 100%;
     display: flex;
     flex-direction: column;
     gap: 2rem;
-
-
-
+    transform: perspective(1000px) rotateY(0deg);
+    transition: 1s;
+    position: relative;
 }
 
-.contact .contact-card .contact-card-front .contact-card-title {}
+.contact .contact-card .contact-card-back {
+    background-color: rgba(221, 23, 23, 0.925);
+    height: 100%;
+    position: absolute;
+    top: 0;   
+    left: 0;
+    align-items: center;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    backface-visibility: hidden;
+    transform: perspective(1000px) rotateY(-180deg);
+    transition: 1s;
+}
+
+.contact-card.active .contact-card-front {
+    transform: perspective(1000px) rotateY(180deg);
+}
+
+.contact-card.active  .contact-card-back{
+    transform: perspective(1000px) rotateY(0deg);
+}
 
 .contact .contact-card .contact-card-front .contact-card-content {
     text-align: center;
@@ -57,6 +81,10 @@
     height: 2rem;
 }
 
-.contact .contact-card .contact-card-front .contact-card-content .contact-card-content-direction-description {}
+.contact .contact-card .contact-card-back .contact-card-content {
+    text-align: center;
+    display: flex;
+    gap: 1rem;
 
-.contact .contact-card .contact-card-front .contact-card-button {}
+}
+

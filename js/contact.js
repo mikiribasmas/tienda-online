@@ -1,5 +1,5 @@
 export default (() => {
-    const contact = document.querySelector('.contact-card-button button')
+    const contact = document.querySelector('.flip-button button')
     contact.addEventListener('click', () => {
         console.log('hey');});
   })();

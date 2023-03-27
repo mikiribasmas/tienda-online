@@ -24,16 +24,28 @@
 //   })();
 
 export default (() => {
-    const hamburguerIcons = document.querySelectorAll('.hamburguer-icon img');
-    const menuItems = document.querySelector('.menu-items ul li');
+    const inactiveIcons = document.querySelectorAll('.menu-items');
+    const hamburguerIcons = document.querySelectorAll('.hamburguer-icon');
+    const menuItems = document.querySelectorAll('.menu-items ul li');
+    const hamburgerContainer = document.querySelectorAll('.hamburguer');
 
-    hamburguerIcons.forEach(hamburguerIcon => {
-      hamburguerIcon.addEventListener('click', () => {
-        menuItems.classList.toggle('active');
+    for(let i = 0; i < hamburguerIcons.length; i++) {
+      hamburguerIcons[i].addEventListener('click', () => {
+        menuItems[i].classList.toggle('active');
+        inactiveIcons[i].classList.toggle('active');
+        hamburgerContainer[i].classList.toggle('active');
         console.log('Hamburguesa clickeada');
-        
       });
-    });
+    }
+
+    // hamburguerIcons.forEach(hamburguerIcon => {
+    //   hamburguerIcon.addEventListener('click', () => {
+    //     menuItems.closest('.menu-items ul li').classList.toggle('active');
+    //     hamburgerContainer.classList.toggle('active');
+    //     console.log('Hamburguesa clickeada');
+        
+    //   });
+    // });
   })();
 
   
