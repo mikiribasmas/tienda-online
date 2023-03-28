@@ -46,6 +46,7 @@
     color: rgb(0, 0, 0);
     font-weight: 600;
     
+    
 }
 
 .faq .faq-intro .faq-description p{
@@ -58,7 +59,8 @@
     flex-direction: column;
     width: 100%;
     height: 50%;
-    gap: 2rem;
+    gap: 3rem;
+    align-items: center;
 
 }
 
@@ -66,9 +68,16 @@
     display: flex;
     flex-direction: column;
     width: 100%;
+    height: 100%;
     cursor: pointer;
-   
-   
+}
+
+.faq .faq-content .faq-content-item.active {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
 }
 
 
@@ -99,8 +108,19 @@
     margin-bottom: 1rem;
 }
 
-.faq .faq-content .faq-content-item .faq-content-item-description {
+.faq .faq-content .faq-content-item .faq-content-item-description p{
     line-height: 1.5rem;
     font-size: 1.25rem;
+    opacity: 0;
+    z-index: $z-index-background;
+    transition: opacity 0.3s ease-out;
+    max-height: 0;
     
+}
+
+.faq .faq-content .faq-content-item .faq-content-item-description p.active{
+    opacity: 1;
+    z-index: $z-index-front;
+    transition: opacity 0.3s ease-in;
+    height: 100%;
 }
