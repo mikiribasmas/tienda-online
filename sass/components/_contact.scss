@@ -12,6 +12,8 @@
 
 }
 
+
+
 .contact .contact-map iframe {
     width: 100%;
     height: 95vh;
@@ -25,8 +27,8 @@
     justify-content: center;
     position: absolute;
     align-items: center;
-    width: 60%;
-    height: 40vh;
+    width: 35%;
+    height: 45vh;
     text-align: center;
     transition: transform 0.5s ease-in-out; /* Agregamos la transición al transform */
 }
@@ -43,10 +45,18 @@
     transform: perspective(1000px) rotateY(0deg);
     transition: 1s;
     position: relative;
+    justify-content: center;
+}
+
+.contact .contact-card .contact-card-front .contact-card-title{
+    color: rgb(165,174,179);
+}
+.contact .contact-card .contact-card-back .contact-card-title{
+    color: rgb(165,174,179);
 }
 
 .contact .contact-card .contact-card-back {
-    background-color: rgba(221, 23, 23, 0.925);
+    background-color: rgb(255, 255, 255);
     height: 100%;
     position: absolute;
     top: 0;   
@@ -59,6 +69,7 @@
     backface-visibility: hidden;
     transform: perspective(1000px) rotateY(-180deg);
     transition: 1s;
+    justify-content: center;
 }
 
 .contact-card.active .contact-card-front {
@@ -73,6 +84,7 @@
     text-align: center;
     display: flex;
     gap: 1rem;
+    color:rgb(165,174,179);
 
 }
 
@@ -85,6 +97,30 @@
     text-align: center;
     display: flex;
     gap: 1rem;
+    color:rgb(165,174,179) ;
 
 }
 
+.flip-button{
+    width: 50%;
+    height: 10%;
+}
+
+.flip-button button{
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    background-color: rgb(0,132,255);
+    border: none;
+}
+
+.flip-button button p{
+    color: white;
+    font-weight: 600;
+    
+}
+
+.flip-button button:hover{
+    background-color:rgb(0, 81, 255) ;
+    
+}

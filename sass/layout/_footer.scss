@@ -1,5 +1,8 @@
 footer {
     /* gap: 5rem;????? */
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
 }
 
 .footer-content {
@@ -7,7 +10,7 @@ footer {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 4rem;
+    
 }
 
 .footer-content .footer-menu ul {
@@ -24,7 +27,11 @@ footer {
     height: 3rem;
 }
 
-.footer-rights {}
+.footer-rights {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
 
 .footer-rights .footer-lista {
     margin-bottom: 1rem;

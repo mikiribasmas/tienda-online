@@ -140,13 +140,15 @@ p {
 
 footer {
   /* gap: 5rem;????? */
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
 }
 
 .footer-content {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  gap: 4rem;
 }
 
 .footer-content .footer-menu ul {
@@ -160,6 +162,12 @@ footer {
 .footer-content .footer-menu ul li a svg {
   width: 3rem;
   height: 3rem;
+}
+
+.footer-rights {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
 }
 
 .footer-rights .footer-lista {
@@ -335,8 +343,8 @@ a span {
 }
 
 .modal-image {
-  width: 50%;
-  height: 100%;
+  width: 70%;
+  height: 90%;
 }
 
 .modal-image img {
@@ -860,8 +868,8 @@ a span {
 }
 
 .hamburguer .hamburguer-icon {
-  width: 3rem;
-  height: 3rem;
+  width: 2rem;
+  height: 2rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -873,7 +881,7 @@ a span {
 }
 
 .hamburguer.active {
-  height: 80%;
+  height: 60%;
 }
 
 .team-persons-item-name {
@@ -884,6 +892,7 @@ a span {
 
 .menu-items {
   display: none;
+  transition: all 1s ease-in;
 }
 
 .menu-items ul {
@@ -895,106 +904,55 @@ a span {
 }
 
 .menu-items ul li svg {
-  height: 2rem;
-  width: 2rem;
+  height: 1.5rem;
+  width: 1.5rem;
 }
 
 .menu-items.active {
   display: block;
 }
 
-.nav-icon-2 {
-  width: 35px;
-  height: 30px;
-  margin: 10px 10px;
-  position: relative;
+.ham {
   cursor: pointer;
-  display: inline-block;
+  -webkit-tap-highlight-color: transparent;
+  transition: transform 400ms;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  transform: scale(1.2);
 }
 
-.nav-icon-2 span {
-  background-color: #161616;
-  position: absolute;
-  border-radius: 2px;
-  transition: 0.3s cubic-bezier(0.8, 0.5, 0.2, 1.4);
-}
-
-.nav-icon-2 span:nth-child(1) {
-  width: 100%;
-  height: 4px;
-  display: block;
-  top: 0px;
-  left: 0px;
-}
-
-.nav-icon-2 span:nth-child(2) {
-  width: 100%;
-  height: 4px;
-  display: block;
-  top: 13px;
-  left: 0px;
-}
-
-.nav-icon-2 span:nth-child(3) {
-  width: 100%;
-  height: 4px;
-  display: block;
-  bottom: 0px;
-  left: 0px;
-}
-
-.nav-icon-2:not(.open):hover span:nth-child(1) {
-  width: 100%;
-  height: 4px;
-  display: block;
-  top: -2px;
-  left: 0px;
-  transition: 0.3s cubic-bezier(0.8, 0.5, 0.2, 1.4);
-}
-
-.nav-icon-2:not(.open):hover span:nth-child(2) {
-  width: 100%;
-  height: 4px;
-  display: block;
-  top: 13px;
-  left: 0px;
-  transition: 0.4s cubic-bezier(0.8, 0.5, 0.2, 1.4);
-}
-
-.nav-icon-2:not(.open):hover span:nth-child(3) {
-  width: 100%;
-  height: 4px;
-  display: block;
-  bottom: -2px;
-  left: 0px;
-  transition: 0.3s cubic-bezier(0.8, 0.5, 0.2, 1.4);
-}
-
-.nav-icon-2.open span:nth-child(1) {
-  left: 3px;
-  top: 12px;
-  width: 30px;
-  transition: 0.3s cubic-bezier(0.8, 0.5, 0.2, 1.4);
-  transform: rotate(90deg);
-  transition-delay: 150ms;
-}
-
-.nav-icon-2.open span:nth-child(2) {
-  left: 2px;
-  top: 20px;
-  width: 20px;
-  transition: 0.3s cubic-bezier(0.8, 0.5, 0.2, 1.4);
+.hamRotate.active {
   transform: rotate(45deg);
-  transition-delay: 50ms;
 }
 
-.nav-icon-2.open span:nth-child(3) {
-  left: 14px;
-  top: 20px;
-  width: 20px;
-  transition: 0.3s cubic-bezier(0.8, 0.5, 0.2, 1.4);
-  transform: rotate(-45deg);
-  transition-delay: 100ms;
+.hamRotate180.active {
+  transform: rotate(180deg);
+}
+
+.line {
+  fill: none;
+  transition: stroke-dasharray 400ms, stroke-dashoffset 400ms;
+  stroke: #000;
+  stroke-width: 7;
+  stroke-linecap: round;
+}
+
+.ham1 .top {
+  stroke-dasharray: 40 139;
+}
+
+.ham1 .bottom {
+  stroke-dasharray: 40 180;
+}
+
+.ham1.active .top {
+  stroke-dashoffset: -98px;
+}
+
+.ham1.active .bottom {
+  stroke-dashoffset: -138px;
 }
 
 .contact {
@@ -1022,8 +980,8 @@ a span {
   justify-content: center;
   position: absolute;
   align-items: center;
-  width: 60%;
-  height: 40vh;
+  width: 35%;
+  height: 45vh;
   text-align: center;
   transition: transform 0.5s ease-in-out; /* Agregamos la transición al transform */
 }
@@ -1040,10 +998,19 @@ a span {
   transform: perspective(1000px) rotateY(0deg);
   transition: 1s;
   position: relative;
+  justify-content: center;
+}
+
+.contact .contact-card .contact-card-front .contact-card-title {
+  color: rgb(165, 174, 179);
+}
+
+.contact .contact-card .contact-card-back .contact-card-title {
+  color: rgb(165, 174, 179);
 }
 
 .contact .contact-card .contact-card-back {
-  background-color: rgba(221, 23, 23, 0.925);
+  background-color: rgb(255, 255, 255);
   height: 100%;
   position: absolute;
   top: 0;
@@ -1056,6 +1023,7 @@ a span {
   backface-visibility: hidden;
   transform: perspective(1000px) rotateY(-180deg);
   transition: 1s;
+  justify-content: center;
 }
 
 .contact-card.active .contact-card-front {
@@ -1070,6 +1038,7 @@ a span {
   text-align: center;
   display: flex;
   gap: 1rem;
+  color: rgb(165, 174, 179);
 }
 
 .contact .contact-card .contact-card-front .contact-card-content .contact-card-content-direction-icon {
@@ -1081,6 +1050,29 @@ a span {
   text-align: center;
   display: flex;
   gap: 1rem;
+  color: rgb(165, 174, 179);
+}
+
+.flip-button {
+  width: 50%;
+  height: 10%;
+}
+
+.flip-button button {
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+  background-color: rgb(0, 132, 255);
+  border: none;
+}
+
+.flip-button button p {
+  color: white;
+  font-weight: 600;
+}
+
+.flip-button button:hover {
+  background-color: rgb(0, 81, 255);
 }
 
 /*# sourceMappingURL=app.css.map */
