@@ -68,7 +68,7 @@
     display: flex;
     flex-direction: column;
     width: 100%;
-    height: 100%;
+    height: 15%;
     cursor: pointer;
     
     
@@ -112,13 +112,25 @@
     margin-bottom: 1rem;
 }
 
+.faq .faq-content .faq-content-item .faq-content-item-description{
+   
+    overflow: hidden;
+    transition: max-height 1s ease-out;
+    height: 20%;
+}
+
+.faq .faq-content .faq-content-item .faq-content-item-description.active{
+
+    height: 100%;
+}
+
 .faq .faq-content .faq-content-item .faq-content-item-description p{
     line-height: 1.5rem;
     font-size: 1.25rem;
     opacity: 0;
     z-index: $z-index-background;
     transition: opacity 0.3s ease-out;
-    max-height: 0;
+    max-height: 0%;
     
 }
 

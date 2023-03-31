@@ -306,45 +306,60 @@ a span {
   }
 }
 .modal-content {
-  background-color: white;
   justify-content: center;
   align-items: center;
-  padding: 0 10%;
-  width: 75%;
-  height: 75vh;
+  padding: 0 0%;
+  width: 100%;
+  height: 100%;
   position: fixed;
   transform: translate(-50%, -50%);
   display: none;
   z-index: 9999;
   top: 50%;
   left: 50%;
+  overflow: hidden;
 }
 
-.close-button {
+.modal-product {
+  display: flex;
+  width: 70%;
+  height: 80%;
+  position: relative;
+  background-color: white;
+  overflow: hidden;
+}
+
+.modal-content-description-button {
   position: absolute;
   top: 5%;
   right: 5%;
-  width: 8%;
+  width: 15%;
   height: 5%;
-  border-radius: 7px;
-  border: none;
+  border-radius: 10px;
   background-color: rgba(179, 179, 179, 0.626);
+  z-index: 1001;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.close-button {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  border: none;
   cursor: pointer;
+  background-color: rgba(179, 179, 179, 0.626);
 }
 
 .close-button:hover {
   background-color: rgba(122, 122, 122, 0.74);
 }
 
-.modal-product {
-  display: flex;
-  width: 100%;
-  height: 80vh;
-}
-
 .modal-image {
-  width: 70%;
-  height: 90%;
+  width: 100%;
+  height: 100%;
+  z-index: 1000;
 }
 
 .modal-image img {
@@ -352,13 +367,50 @@ a span {
   height: 100%;
 }
 
-.modal-description {
-  width: 50%;
+.modal-content-descriptions {
+  display: flex;
+  width: 100%;
+  z-index: 1001;
+  overflow: hidden;
+  position: relative;
+  height: 200%;
+}
+
+.modal-content-description {
+  width: 100%;
+  height: 100%;
+  transition: order 1s;
+  order: 1;
+  background-color: white;
+  overflow: hidden;
   display: flex;
   flex-direction: column;
-  gap: 2rem;
+  position: absolute;
+}
+
+.modal-content-description {
+  height: 100%;
+  width: 100%;
+}
+
+.modal-description {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
   justify-content: center;
-  padding: 0 3%;
+  padding: 0 5%;
+  bottom: 0;
+  transition: transform 1s;
+}
+
+#uno {
+  background-color: aqua;
+}
+
+.modal-description.activeForm {
+  transform: translateY(-100%);
 }
 
 .modal-descripcion-album {
@@ -395,6 +447,118 @@ a span {
   background-color: rgb(255, 136, 0);
 }
 
+.modal-image-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 300px;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  transition: transform 1s;
+}
+
+.modal-image-slide.slide-active {
+  transform: translateX(-50%);
+}
+
+.modal-form {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  gap: 2rem;
+  padding: 5% 0%;
+}
+
+.modal-form-name {
+  display: flex;
+  gap: 2rem;
+  width: 100%;
+  height: 15%;
+}
+
+.modal-form-name .modal-form-first-name {
+  background-color: blueviolet;
+  width: 50%;
+  height: 100%;
+  text-align: center;
+  align-items: center;
+  display: flex;
+  justify-content: flex-start;
+  padding: 0 5%;
+}
+
+.modal-form-name .modal-form-last-name {
+  background-color: blueviolet;
+  width: 50%;
+  height: 100%;
+  text-align: center;
+  align-items: center;
+  display: flex;
+  justify-content: flex-start;
+  padding: 0 5%;
+}
+
+.modal-form .modal-adresses {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 50%;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.modal-form .modal-adresses .modal-adress {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  background-color: aqua;
+  padding: 0 5%;
+}
+
+.modal-country-input {
+  display: flex;
+  gap: 2rem;
+  width: 100%;
+  height: 15%;
+  justify-content: flex-start;
+}
+
+.modal-country-input .modal-state {
+  width: 50%;
+  padding: 0 5%;
+  background-color: brown;
+  height: 100%;
+  text-align: center;
+  align-items: center;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.modal-country-input .modal-zip {
+  width: 50%;
+  height: 100%;
+  padding: 0 5%;
+  background-color: brown;
+  text-align: center;
+  align-items: center;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.modal-input-options {
+  width: 100%;
+  height: 10%;
+}
+
+.modal-input-options button {
+  width: 100%;
+  height: 100%;
+}
+
 .featured {
   display: flex;
   flex-direction: column;
@@ -426,6 +590,13 @@ a span {
   display: flex;
   flex-direction: column;
   width: 100%;
+  border-radius: 10%;
+  transition: all 0.2s ease-in-out;
+}
+
+.featured .featured-items .featured-item:hover {
+  transform: scale(1);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
 }
 
 .featured .featured-items .featured-item .featured-item-title h3 {
@@ -499,7 +670,7 @@ a span {
   display: flex;
   flex-direction: column;
   width: 100%;
-  height: 100%;
+  height: 15%;
   cursor: pointer;
 }
 
@@ -536,13 +707,23 @@ a span {
   margin-bottom: 1rem;
 }
 
+.faq .faq-content .faq-content-item .faq-content-item-description {
+  overflow: hidden;
+  transition: max-height 1s ease-out;
+  height: 20%;
+}
+
+.faq .faq-content .faq-content-item .faq-content-item-description.active {
+  height: 100%;
+}
+
 .faq .faq-content .faq-content-item .faq-content-item-description p {
   line-height: 1.5rem;
   font-size: 1.25rem;
   opacity: 0;
   z-index: -1;
   transition: opacity 0.3s ease-out;
-  max-height: 0;
+  max-height: 0%;
 }
 
 .faq .faq-content .faq-content-item .faq-content-item-description p.active {
@@ -776,6 +957,7 @@ a span {
 /******REPRODUCTOR*****/
 .detail .detail-column .detail-item .detail-item-icono svg {
   width: 5rem;
+  height: 5rem;
 }
 
 .detail .detail-column .detail-img {
@@ -881,7 +1063,8 @@ a span {
 }
 
 .hamburguer.active {
-  height: 60%;
+  height: max-content;
+  width: max-content;
 }
 
 .team-persons-item-name {
@@ -990,19 +1173,23 @@ a span {
   background-color: rgb(255, 255, 255);
   height: 100%;
   backface-visibility: hidden;
-  align-items: center;
+  align-items: flex-start;
   width: 100%;
   display: flex;
   flex-direction: column;
-  gap: 2rem;
+  gap: 3rem;
   transform: perspective(1000px) rotateY(0deg);
   transition: 1s;
   position: relative;
   justify-content: center;
+  padding: 0 5%;
+  border-radius: 5px;
 }
 
 .contact .contact-card .contact-card-front .contact-card-title {
   color: rgb(165, 174, 179);
+  width: 100%;
+  text-align: center;
 }
 
 .contact .contact-card .contact-card-back .contact-card-title {
@@ -1039,6 +1226,7 @@ a span {
   display: flex;
   gap: 1rem;
   color: rgb(165, 174, 179);
+  width: 100%;
 }
 
 .contact .contact-card .contact-card-front .contact-card-content .contact-card-content-direction-icon {
@@ -1054,7 +1242,7 @@ a span {
 }
 
 .flip-button {
-  width: 50%;
+  width: 100%;
   height: 10%;
 }
 

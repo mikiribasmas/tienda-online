@@ -37,19 +37,25 @@
     background-color: rgb(255, 255, 255);
     height: 100%;
     backface-visibility: hidden;
-    align-items: center;
+    align-items: flex-start;
     width: 100%;
     display: flex;
-    flex-direction: column;
-    gap: 2rem;
+    flex-direction: column; 
+    gap: 3rem;
     transform: perspective(1000px) rotateY(0deg);
     transition: 1s;
     position: relative;
     justify-content: center;
+    padding: 0 5%;
+    border-radius: 5px;
 }
+
+
 
 .contact .contact-card .contact-card-front .contact-card-title{
     color: rgb(165,174,179);
+    width: 100%;
+    text-align: center;
 }
 .contact .contact-card .contact-card-back .contact-card-title{
     color: rgb(165,174,179);
@@ -85,6 +91,7 @@
     display: flex;
     gap: 1rem;
     color:rgb(165,174,179);
+    width: 100%;
 
 }
 
@@ -102,8 +109,9 @@
 }
 
 .flip-button{
-    width: 50%;
+    width: 100%;
     height: 10%;
+
 }
 
 .flip-button button{
