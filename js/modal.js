@@ -5,10 +5,6 @@ export default (() => {
     const carousel = document.querySelectorAll('.modal-image-slide');
     const modalCheckouts = document.querySelectorAll('.modal-checkout');
     const modalForms = document.querySelectorAll('.modal-description');
-    const description = document.getElementById('description');
-    const detail = document.getElementById('details');
-    const infos = document.getElementById('info');
-    const infotext = document.querySelector('.modal-info-text p');
 
 
     buyNowButtons.forEach(buyNowButton => buyNowButton.addEventListener('click', () => {
@@ -39,10 +35,30 @@ export default (() => {
 
     })
 
-    description.addEventListener("click", () => {
-        infotext.classList.toggle('active');
+    const botonSumar = document.querySelector(".boton-sumar");
+    const botonRestar = document.querySelector(".boton-restar");
+    const cantidad = document.querySelector(".cantidad");
 
-    })
+    let contador = 0;
+
+    botonSumar.addEventListener("click", sumar);
+    botonRestar.addEventListener("click", restar);
+
+    function sumar() {
+        contador++;
+        actualizarCantidad();
+    }
+
+    function restar() {
+        if (contador > 0) {
+            contador--;
+            actualizarCantidad();
+        }
+    }
+
+    function actualizarCantidad() {
+        cantidad.textContent = contador;
+    }
 
 
 
