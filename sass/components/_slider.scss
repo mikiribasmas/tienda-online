@@ -32,7 +32,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 3rem;
+    gap: 5rem;
 }
 
 .slider .slider-title {
@@ -40,7 +40,7 @@
 }
 
 .slider .slider-title h1 {
-    color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
     font-size: 4rem;
   
 }
@@ -50,7 +50,7 @@
 }
 
 .slider .slider-description p {
-    color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
     font-size: 2rem;
     font-weight: 600;
 }
@@ -61,6 +61,7 @@
     border: none;
     border-radius: 10px;
     background-color: $primary-color;
+    animation: move 2s ease-in-out infinite alternate;
 }
 
 .slider-button a {
@@ -73,6 +74,20 @@
     border-radius: 10px;
 
 }
+
+.slider-button button:hover{
+    animation-play-state: paused;
+}
+
+
+@keyframes move {
+    0% {
+      transform: translateY(0);
+    }
+    100% {
+      transform: translateY(10px);
+    }
+  }
 
 a:hover .wave {
     top: -7.5rem;
@@ -112,13 +127,13 @@ a span {
 .wave::before {
     border-radius: 45%;
     background-color: rgba(20, 20, 20, 0);
-    animation: wave 5s linear infinite;
+    animation: wave 10s linear infinite;
 }
 
 .wave::after {
     border-radius: 40%;
     background-color: rgba(20, 20, 20, 0.5);
-    animation: wave 10s linear infinite;
+    animation: wave 15s linear infinite;
 }
 
 @keyframes wave {

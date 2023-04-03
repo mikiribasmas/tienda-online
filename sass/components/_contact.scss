@@ -27,8 +27,8 @@
     justify-content: center;
     position: absolute;
     align-items: center;
-    width: 35%;
-    height: 45vh;
+    width: 45%;
+    height: 75%;
     text-align: center;
     transition: transform 0.5s ease-in-out; /* Agregamos la transición al transform */
 }
@@ -41,7 +41,7 @@
     width: 100%;
     display: flex;
     flex-direction: column; 
-    gap: 3rem;
+    gap: 4.5rem;
     transform: perspective(1000px) rotateY(0deg);
     transition: 1s;
     position: relative;
@@ -71,11 +71,12 @@
     width: 100%;
     display: flex;
     flex-direction: column;
-    gap: 2rem;
+    gap: 4rem;
     backface-visibility: hidden;
     transform: perspective(1000px) rotateY(-180deg);
     transition: 1s;
     justify-content: center;
+    padding: 0 5%;
 }
 
 .contact-card.active .contact-card-front {
@@ -100,13 +101,6 @@
     height: 2rem;
 }
 
-.contact .contact-card .contact-card-back .contact-card-content {
-    text-align: center;
-    display: flex;
-    gap: 1rem;
-    color:rgb(165,174,179) ;
-
-}
 
 .flip-button{
     width: 100%;
@@ -130,5 +124,69 @@
 
 .flip-button button:hover{
     background-color:rgb(0, 81, 255) ;
+    
+}
+
+.contact-card-back-registration{
+    width: 100%;
+    height: 12%;
+    display: flex;
+    
+    gap: 2rem;
+    
+
+}
+
+.contact-card-back-registration form{
+    width: 95%;
+    height: 100%;
+    
+}
+
+.contact-card-back-registration form label{
+    
+}
+
+.contact-card-back-registration form input{
+    width: 100%;
+    height: 100%;
+    padding: 0 10%;
+    
+}
+
+.contact-card-back-subject{
+    width: 100%;
+    height: 12%;
+   
+}
+
+.contact-card-back-subject form{
+    width: 100%;
+    height: 100%;
+}
+
+.contact-card-back-subject input{
+    width: 100%;
+    height: 100%;
+    padding: 0 5%;
+    
+}
+
+
+.contact-card-back-message{
+    width: 100%;
+    height: 12%;
+    
+}
+
+.contact-card-back-message form{
+    width: 100%;
+    height: 100%;
+}
+
+.contact-card-back-message form input{
+    width: 100%;
+    height: 100%;
+    padding: 0 5%;
     
 }

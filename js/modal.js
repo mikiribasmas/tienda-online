@@ -5,7 +5,10 @@ export default (() => {
     const carousel = document.querySelectorAll('.modal-image-slide');
     const modalCheckouts = document.querySelectorAll('.modal-checkout');
     const modalForms = document.querySelectorAll('.modal-description');
-
+    const description = document.getElementById('description');
+    const detail = document.getElementById('details');
+    const infos = document.getElementById('info');
+    const infotext = document.querySelector('.modal-info-text p');
 
 
     buyNowButtons.forEach(buyNowButton => buyNowButton.addEventListener('click', () => {
@@ -35,6 +38,12 @@ export default (() => {
         });
 
     })
+
+    description.addEventListener("click", () => {
+        infotext.classList.toggle('active');
+
+    })
+
 
 
 })();

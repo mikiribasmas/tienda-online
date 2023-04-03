@@ -5,14 +5,16 @@
     height: 100vh;
     width: 100%;
     background: linear-gradient(to bottom, white, hsla(23, 69%, 25%, 0.888));
-
+    gap: 1rem;
     align-items: center;
-    gap: 2em;
+
 }
 
 .featured .featured-title h2 {
     font-size: 3rem;
     width: 100%;
+    height: 20%;
+
 }
 
 .featured .featured-description p {
@@ -21,24 +23,34 @@
 
 .featured .featured-items {
     display: flex;
-    gap: 1rem;
+    gap: 3rem;
     width: 80%;
-
+    height: 80%;
+    justify-content: center;
+    align-items: center;
+    padding: 5% 5%;
 }
 
 .featured .featured-items .featured-item {
     align-items: center;
     display: flex;
     flex-direction: column;
-    width: 100%;
-    border-radius: 10%;
+    width: 50%;
+    height: 90%;
+    border-radius: 20px;
     transition: all 0.2s ease-in-out;
-    
+
+    justify-content: center;
+
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  
+
+
 }
 
 .featured .featured-items .featured-item:hover {
     transform: scale(1);
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.8);
 }
 
 .featured .featured-items .featured-item .featured-item-img {}
