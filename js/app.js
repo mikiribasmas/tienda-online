@@ -7,5 +7,6 @@ import './swipeable-element.js';
 import './featured.js';
 import './contact.js'; 
 import './faq.js';
+import './contador.js';
 
 console.log("hola");

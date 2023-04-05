@@ -383,7 +383,6 @@ a span {
   display: flex;
   width: 100%;
   z-index: 1001;
-  overflow: hidden;
   position: relative;
   height: 200%;
 }
@@ -394,7 +393,6 @@ a span {
   transition: order 1s;
   order: 1;
   background-color: white;
-  overflow: hidden;
   display: flex;
   flex-direction: column;
   position: absolute;
@@ -519,7 +517,7 @@ a span {
   height: 100%;
   width: 100%;
   gap: 2rem;
-  padding: 5% 0%;
+  padding: 5% 5%;
   align-items: center;
 }
 
@@ -640,6 +638,8 @@ a span {
 .modal-input-options button {
   width: 100%;
   height: 100%;
+  border: none;
+  border-radius: 10px;
 }
 
 .modal-info-list button.active {
@@ -670,7 +670,7 @@ a span {
 }
 
 .cantidad {
-  margin: 0 1rem;
+  padding: 0 30%;
   font-size: 1rem;
 }
 

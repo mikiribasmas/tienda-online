@@ -20,6 +20,7 @@ export default (() => {
           buttons[i].classList.add('active');
         }
       });
-    }
+    };
+
   })();
   
