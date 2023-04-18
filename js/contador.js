@@ -5,14 +5,17 @@ const botonRestar = document.querySelector(".boton-restar");
 const cantidad = document.querySelector(".cantidad");
 let fixedPrice = 29.99;
 
+
 let contador = 0 ;
 
-botonSumar.addEventListener("click", sumar);
+botonSumar.addEventListener("click", sumar );
 botonRestar.addEventListener("click", restar);
 
 function sumar() {
     contador++;
     actualizarCantidad();
+
+
 
 }
 

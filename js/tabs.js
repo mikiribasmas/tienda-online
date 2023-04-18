@@ -12,6 +12,7 @@ export default (() => {
         activeText.classList.remove('active');
       });
     });
+    
     for (let i = 0; i < buttons.length; i++) {
       buttons[i].addEventListener('click', () => {
         const activeButton = document.querySelector('.modal-info-list button.active');

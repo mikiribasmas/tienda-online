@@ -395,4 +395,23 @@
     font-size: 1rem;
   }
 
+  .addedProduct{
+    position: fixed;
+    bottom:10%;
+    right: 5%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    width: 10%;
+    height: 10%;
+    background-color: aquamarine;
+    z-index: 1002;
+    display: none;
+
+  }
+
+  .addedProduct .active{
+    display: block;
+  }
+ 
 
